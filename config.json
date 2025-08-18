@@ -1,0 +1,65 @@
+{
+  "brandName": "UrCelebrations",
+  "tagline": "Your moments, our promise.",
+  "email": "hello@UrCelebrations.co.uk",
+  "phone": "+447000000000",
+  "address": "London, UK",
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/_shyam_chowdary",
+    "facebook": "",
+    "whatsapp": ""
+  },
+  "heroImages": [
+    "assets/home/image1.jpg",
+    "assets/home/image2.jpg",
+    "assets/home/image3.jpeg",
+    "assets/home/image4.jpg",
+    "assets/home/image5.jpg",
+    "assets/home/image6.jpg"
+  ],
+  "services": [
+    {
+      "title": "Birthday Decorations",
+      "description": "Balloon garland, backdrop stand, signage.",
+      "image": "assets/services/image1.jpg",
+      "price": "Contact Us"
+    },
+    {
+      "title": "Gender Reveal Decorations",
+      "description": "Larger backdrop, themed props, table styling.",
+      "image": "assets/services/image2.jpg",
+      "price": "Contact Us"
+    },
+    {
+      "title": "Surprise Party Decorations",
+      "description": "Feature wall, ceiling décor, custom signage.",
+      "image": "assets/services/image3.jpg",
+      "price": "Contact Us"
+    }
+  ],
+  "contactForm": {
+    "action": "",
+    "consentText": "I agree to be contacted about my enquiry.",
+    "placeholders": {
+      "fullName": "Your full name",
+      "email": "you@example.com",
+      "postcode": "e.g., HA1 1AA",
+      "description": "e.g., 1st birthday in Harrow, soft pastel theme…"
+    },
+    "budgetOptions": [
+      "<£300",
+      "£300–£600",
+      "£600–£1000",
+      "£1000+"
+    ]
+  },
+  "seo": {
+    "title": "UrCelebrations — Birthday Decorations in London | Your moments, our promise.",
+    "description": "UrCelebrations creates stylish, stress-free birthday decorations in London. Theme packages, set-up & clean-up, optional add-ons like photography and cake. Get a fast quote.",
+    "keywords": "birthday decorations London, balloons, backdrops, event styling",
+    "image": "/assets/og-cover.svg",
+    "url": ""
+  }
+}
+
+

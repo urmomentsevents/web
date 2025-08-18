@@ -1,12 +1,12 @@
-# UrMoments Website — AI Prompt / Design Specification
+# UrCelebrations Website — AI Prompt / Design Specification
 
-This file contains the **design requirements** for generating the UrMoments marketing website.  
+This file contains the **design requirements** for generating the UrCelebrations marketing website.  
 The AI agent should follow these instructions when creating the HTML, CSS (Tailwind), and JS files.
 
 ---
 
 ## 🏷 Brand
-- **Name:** UrMoments  
+- **Name:** UrCelebrations  
 - **Tagline:** *Your moments, our promise.*  
 - **Tone:** Warm, trustworthy, family-centric.  
 - **Colors (Tailwind):**
@@ -31,7 +31,7 @@ The AI agent should follow these instructions when creating the HTML, CSS (Tailw
 ---
 
 ## 🖥 Global UI
-- Sticky header with logo wordmark **UrMoments** and nav links: Home, Services, Contact  
+- Sticky header with logo wordmark **UrCelebrations** and nav links: Home, Services, Contact  
 - Mobile navigation: hamburger → slide-over menu  
 - Footer:
   - Mini nav  
@@ -121,15 +121,15 @@ Submit:
 
 ## 🔍 SEO & Meta
 - `<title>`:
-  - Home: “UrMoments — Birthday Decorations in London | Your moments, our promise.”  
-  - Services: “UrMoments Services — Packages & Add-ons”  
+  - Home: “UrCelebrations — Birthday Decorations in London | Your moments, our promise.”  
+  - Services: “UrCelebrations Services — Packages & Add-ons”  
 - Meta description (Home):  
-  “UrMoments creates stylish, stress-free birthday decorations in London. Theme packages, set-up & clean-up, optional add-ons like photography and cake. Get a fast quote.”  
+  “UrCelebrations creates stylish, stress-free birthday decorations in London. Theme packages, set-up & clean-up, optional add-ons like photography and cake. Get a fast quote.”  
 - Open Graph & Twitter meta using `/assets/og-cover.jpg`  
 - JSON-LD schema: `LocalBusiness` with:
-  - name: UrMoments  
+  - name: UrCelebrations  
   - area served: London  
-  - email: hello@urmoments.co.uk  
+  - email: hello@UrCelebrations.co.uk  
   - telephone: placeholder  
 
 ---
