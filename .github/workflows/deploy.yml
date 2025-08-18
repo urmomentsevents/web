@@ -24,6 +24,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Create env.js from GH Pages environment vars
+        run: |
+          : > env.js
+          echo "window.__ENV__ = {" >> env.js
+          if [ -n "${{ secrets.FORMSPREE_ACTION_URL }}" ]; then echo "  FORMSPREE_ACTION_URL: '${{ secrets.FORMSPREE_ACTION_URL }}'," >> env.js; fi
+          if [ -n "${{ vars.SITE_URL }}" ]; then echo "  SITE_URL: '${{ vars.SITE_URL }}'" >> env.js; fi
+          echo "};" >> env.js
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 

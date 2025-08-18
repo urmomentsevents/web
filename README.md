@@ -1,6 +1,6 @@
-# UrMoments Website
+# UrCelebrations Website
 
-UrMoments is a UK-based small events decoration and organisation brand.  
+UrCelebrations is a UK-based small events decoration and organisation brand.  
 We help families and communities celebrate birthdays, baby showers, gender reveals, and cultural festivals with stress-free, stylish, and affordable decorations.  
 
 **Tagline:** *Your moments, our promise.*  
@@ -8,7 +8,7 @@ We help families and communities celebrate birthdays, baby showers, gender revea
 ---
 
 ## 📖 Project Overview
-This repository contains the source code for the **UrMoments marketing website**.  
+This repository contains the source code for the **UrCelebrations marketing website**.  
 The site is designed to be:
 - **Mobile-first** (most of our customers browse on their phones)  
 - **Lightweight and fast** (plain HTML, Tailwind CSS, minimal JS)  
@@ -29,5 +29,5 @@ Pages:
 ### Run Locally
 Clone the repository and open in your browser:
 ```bash
-git clone https://github.com/<your-username>/urmoments-website.git
-cd urmoments-website
+git clone https://github.com/<your-username>/UrCelebrations-website.git
+cd UrCelebrations-website
