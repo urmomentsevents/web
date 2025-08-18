@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UrMoments Services — Packages & Add-ons</title>
+    <meta name="description" content="Explore UrMoments packages and add-ons for birthday decorations in London. From basic to deluxe, plus photography, cake, catering and more." />
+
+    <!-- TODO: Set the real site URL -->
+    <meta property="og:url" content="https://TODO_SITE_URL/services.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="UrMoments Services — Packages & Add-ons" />
+    <meta property="og:description" content="Pick a starting package; we tailor to your theme and venue. Add-ons include photographer, cake, catering, venue sourcing and more." />
+    <!-- TODO: Replace with real social preview image -->
+    <meta property="og:image" content="/assets/og-cover.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="UrMoments Services — Packages & Add-ons" />
+    <meta name="twitter:description" content="Pick a starting package; we tailor to your theme and venue. Add-ons include photographer, cake, catering, venue sourcing and more." />
+    <meta name="twitter:image" content="/assets/og-cover.svg" />
+
+    <!-- JSON-LD: LocalBusiness -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "UrMoments",
+        "image": "/assets/og-cover.svg",
+        "email": "hello@urmoments.co.uk",
+        "telephone": "TODO_PHONE_NUMBER",
+        "areaServed": "London",
+        "url": "https://TODO_SITE_URL/services.html",
+        "sameAs": [
+          "https://www.instagram.com/TODO_INSTAGRAM/"
+        ]
+      }
+    </script>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                500: '#f43f5e', // rose-500
+                600: '#e11d48'  // rose-600
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      .reveal { opacity: 0; transform: translateY(8px); transition: opacity .5s ease, transform .5s ease; }
+      .revealed { opacity: 1; transform: translateY(0); }
+    </style>
+  </head>
+  <body class="min-h-screen bg-slate-50 text-slate-900">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] bg-white text-slate-900 px-3 py-2 rounded shadow">Skip to content</a>
+
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <a href="index.html" class="text-lg font-semibold tracking-tight text-slate-900">UrMoments</a>
+          <nav class="hidden md:flex items-center gap-6" aria-label="Primary">
+            <a href="index.html" class="text-slate-700 hover:text-rose-600">Home</a>
+            <a href="services.html" class="text-slate-700 hover:text-rose-600">Services</a>
+            <a href="#contact" class="text-slate-700 hover:text-rose-600">Contact</a>
+          </nav>
+          <button id="menuButton" class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500" aria-controls="mobileMenu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="md:hidden fixed inset-0 z-50 hidden" role="dialog" aria-modal="true">
+        <div class="absolute inset-0 bg-black/40" data-close-menu></div>
+        <div class="absolute inset-y-0 left-0 w-80 max-w-[80%] bg-white shadow-xl p-6 flex flex-col gap-4 transform transition-transform duration-200 will-change-transform -translate-x-full" id="mobileMenuPanel">
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-semibold">UrMoments</span>
+            <button class="inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500" data-close-menu aria-label="Close menu">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+          <nav class="flex flex-col gap-3 mt-2" aria-label="Mobile Primary">
+            <a href="index.html" class="px-2 py-2 rounded hover:bg-slate-100" data-close-menu>Home</a>
+            <a href="services.html" class="px-2 py-2 rounded hover:bg-slate-100" data-close-menu>Services</a>
+            <a href="#contact" class="px-2 py-2 rounded hover:bg-slate-100" data-close-menu>Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Header -->
+      <section class="bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+          <div class="max-w-2xl reveal">
+            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">Services &amp; Packages</h1>
+            <p class="mt-3 text-slate-700">Pick a starting package; we tailor to your theme and venue.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Packages -->
+      <section class="bg-slate-50">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+          <!-- TODO: Update features and pricing as needed -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <article class="reveal rounded-lg bg-white p-6 shadow ring-1 ring-slate-200 flex flex-col">
+              <h3 class="text-lg font-semibold">Basic</h3>
+              <p class="mt-1 text-sm text-slate-600">From £249</p>
+              <ul class="mt-4 list-disc list-inside text-sm text-slate-700 space-y-1">
+                <li>Balloon garland</li>
+                <li>Backdrop stand</li>
+                <li>Standard signage</li>
+              </ul>
+              <div class="mt-6">
+                <a href="#contact" class="inline-flex items-center justify-center rounded-md bg-rose-600 px-4 py-2 text-white text-sm font-medium shadow hover:bg-rose-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500">Enquire</a>
+              </div>
+            </article>
+            <article class="reveal rounded-lg bg-white p-6 shadow ring-1 ring-slate-200 flex flex-col">
+              <h3 class="text-lg font-semibold">Premium</h3>
+              <p class="mt-1 text-sm text-slate-600">From £449</p>
+              <ul class="mt-4 list-disc list-inside text-sm text-slate-700 space-y-1">
+                <li>Larger backdrop</li>
+                <li>Themed props</li>
+                <li>Table styling</li>
+              </ul>
+              <div class="mt-6">
+                <a href="#contact" class="inline-flex items-center justify-center rounded-md bg-rose-600 px-4 py-2 text-white text-sm font-medium shadow hover:bg-rose-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500">Enquire</a>
+              </div>
+            </article>
+            <article class="reveal rounded-lg bg-white p-6 shadow ring-1 ring-slate-200 flex flex-col">
+              <h3 class="text-lg font-semibold">Deluxe</h3>
+              <p class="mt-1 text-sm text-slate-600">From £799</p>
+              <ul class="mt-4 list-disc list-inside text-sm text-slate-700 space-y-1">
+                <li>Feature wall</li>
+                <li>Ceiling décor</li>
+                <li>Custom signage</li>
+              </ul>
+              <div class="mt-6">
+                <a href="#contact" class="inline-flex items-center justify-center rounded-md bg-rose-600 px-4 py-2 text-white text-sm font-medium shadow hover:bg-rose-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500">Enquire</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Add-ons -->
+      <section class="bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+          <h2 class="text-xl font-semibold">Add-ons</h2>
+          <ul class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-sm">
+            <li class="reveal rounded-lg bg-slate-50 p-4 ring-1 ring-slate-200">📸 Photographer</li>
+            <li class="reveal rounded-lg bg-slate-50 p-4 ring-1 ring-slate-200">🎂 Cake</li>
+            <li class="reveal rounded-lg bg-slate-50 p-4 ring-1 ring-slate-200">🍽️ Catering</li>
+            <li class="reveal rounded-lg bg-slate-50 p-4 ring-1 ring-slate-200">🏛️ Venue sourcing</li>
+            <li class="reveal rounded-lg bg-slate-50 p-4 ring-1 ring-slate-200">🎁 Return gifts</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Mini Gallery -->
+      <section class="bg-slate-50" aria-labelledby="mini-gallery-heading">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+          <h2 id="mini-gallery-heading" class="reveal text-xl font-semibold text-slate-900">Inspiration</h2>
+          <ul class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4" role="list">
+            <li>
+              <button class="group block w-full" data-lightbox-trigger aria-controls="lightbox" aria-expanded="false">
+                <picture>
+                  <source srcset="assets/gallery1.svg" type="image/svg+xml" />
+                  <img src="assets/gallery1.jpg" alt="Decor inspiration 1" loading="lazy" class="aspect-[4/3] w-full rounded-lg object-cover shadow-sm ring-1 ring-slate-200 group-hover:opacity-95" />
+                </picture>
+              </button>
+            </li>
+            <li>
+              <button class="group block w-full" data-lightbox-trigger aria-controls="lightbox" aria-expanded="false">
+                <picture>
+                  <source srcset="assets/gallery2.svg" type="image/svg+xml" />
+                  <img src="assets/gallery2.jpg" alt="Decor inspiration 2" loading="lazy" class="aspect-[4/3] w-full rounded-lg object-cover shadow-sm ring-1 ring-slate-200 group-hover:opacity-95" />
+                </picture>
+              </button>
+            </li>
+            <li>
+              <button class="group block w-full" data-lightbox-trigger aria-controls="lightbox" aria-expanded="false">
+                <picture>
+                  <source srcset="assets/gallery3.svg" type="image/svg+xml" />
+                  <img src="assets/gallery3.jpg" alt="Decor inspiration 3" loading="lazy" class="aspect-[4/3] w-full rounded-lg object-cover shadow-sm ring-1 ring-slate-200 group-hover:opacity-95" />
+                </picture>
+              </button>
+            </li>
+            <li>
+              <button class="group block w-full" data-lightbox-trigger aria-controls="lightbox" aria-expanded="false">
+                <picture>
+                  <source srcset="assets/gallery4.svg" type="image/svg+xml" />
+                  <img src="assets/gallery4.jpg" alt="Decor inspiration 4" loading="lazy" class="aspect-[4/3] w-full rounded-lg object-cover shadow-sm ring-1 ring-slate-200 group-hover:opacity-95" />
+                </picture>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Lightbox (shared) -->
+      <div id="lightbox" class="fixed inset-0 z-[60] hidden" aria-hidden="true" aria-modal="true" role="dialog">
+        <div class="absolute inset-0 bg-black/80" data-lightbox-close></div>
+        <div class="absolute inset-0 flex items-center justify-center p-4">
+          <figure class="relative w-full max-w-4xl">
+            <img id="lightboxImage" src="" alt="Expanded gallery image" class="w-full max-h-[80vh] object-contain rounded-lg shadow-2xl" />
+            <button type="button" class="absolute top-2 right-2 rounded-full bg-white/90 p-2 text-slate-800 shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500" data-lightbox-close aria-label="Close image">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <section id="contact" class="bg-white scroll-mt-24">
+        <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-12">
+          <h2 class="text-xl font-semibold">Get a fast quote</h2>
+          <p class="mt-1 text-slate-600">Tell us a few details and we’ll get back within 24 hours.</p>
+
+          <form data-formspree method="POST" action="TODO_FORMSPREE_ENDPOINT" class="mt-6 grid grid-cols-1 gap-4">
+            <!-- TODO: Replace action with your Formspree endpoint, e.g., https://formspree.io/f/xxxxxxx -->
+            <div>
+              <label for="fullName" class="block text-sm font-medium text-slate-700">Full Name</label>
+              <input id="fullName" name="fullName" type="text" required class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 shadow-sm focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+              <input id="email" name="email" type="email" required class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 shadow-sm focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500" />
+            </div>
+            <div>
+              <label for="postcode" class="block text-sm font-medium text-slate-700">Postcode</label>
+              <input id="postcode" name="postcode" type="text" required class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 shadow-sm focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500" />
+            </div>
+            <div>
+              <label for="budget" class="block text-sm font-medium text-slate-700">Budget</label>
+              <select id="budget" name="budget" class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 shadow-sm focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500">
+                <option value="<£300">&lt;£300</option>
+                <option value="£300–£600">£300–£600</option>
+                <option value="£600–£1000">£600–£1000</option>
+                <option value=">£1000">£1000+</option>
+              </select>
+            </div>
+            <div>
+              <label for="description" class="block text-sm font-medium text-slate-700">Type of Event / Description</label>
+              <textarea id="description" name="description" rows="5" required placeholder="e.g., 1st birthday in Harrow, soft pastel theme…" class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 shadow-sm focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500"></textarea>
+            </div>
+            <div class="flex items-start gap-3">
+              <input id="consent" name="consent" type="checkbox" required class="mt-1 h-5 w-5 rounded border-slate-300 text-rose-600 focus:ring-rose-500" />
+              <label for="consent" class="text-sm text-slate-700">I agree to be contacted about my enquiry.</label>
+            </div>
+
+            <!-- Honeypot field -->
+            <div class="hidden" aria-hidden="true">
+              <label>Leave this field empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
+            </div>
+
+            <input type="hidden" name="page" value="services" />
+
+            <div class="flex items-center gap-3">
+              <button type="submit" class="inline-flex items-center justify-center rounded-md bg-rose-600 px-5 py-3 text-white font-medium shadow hover:bg-rose-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500">
+                Submit
+              </button>
+              <!-- TODO: Replace with your phone number if you want a tel link -->
+              <a href="tel:TODO_PHONE_NUMBER" class="text-slate-700 hover:text-rose-600 text-sm">Or call us</a>
+            </div>
+
+            <p class="mt-2 text-sm text-slate-600">We’ll never share your information. You can opt out at any time.</p>
+
+            <div class="mt-2 text-sm" aria-live="polite" id="formStatus"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Mobile sticky CTA -->
+    <div class="fixed bottom-4 left-0 right-0 z-40 sm:hidden px-4">
+      <a href="#contact" class="block rounded-md bg-rose-600 px-5 py-3 text-center text-white font-medium shadow-lg hover:bg-rose-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500">Get a Quote</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-10 border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-start">
+          <div>
+            <div class="text-lg font-semibold">UrMoments</div>
+            <p class="mt-2 text-sm text-slate-600">Your moments, our promise.</p>
+          </div>
+          <nav aria-label="Footer" class="flex flex-col gap-2">
+            <a href="/index.html" class="text-slate-700 hover:text-rose-600">Home</a>
+            <a href="/services.html" class="text-slate-700 hover:text-rose-600">Services</a>
+            <a href="#contact" class="text-slate-700 hover:text-rose-600">Contact</a>
+          </nav>
+          <div>
+            <!-- TODO: Replace with real Instagram link -->
+            <a href="https://www.instagram.com/TODO_INSTAGRAM/" class="inline-flex items-center gap-2 text-slate-700 hover:text-rose-600">
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+        <p class="mt-8 text-xs text-slate-500">&copy; <span id="year"></span> UrMoments. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile nav
+      (function() {
+        const button = document.getElementById('menuButton');
+        const menu = document.getElementById('mobileMenu');
+        const panel = document.getElementById('mobileMenuPanel');
+        const closeEls = menu.querySelectorAll('[data-close-menu]');
+        function open() {
+          menu.classList.remove('hidden');
+          requestAnimationFrame(() => panel.classList.remove('-translate-x-full'));
+          button.setAttribute('aria-expanded', 'true');
+          menu.setAttribute('aria-hidden', 'false');
+        }
+        function close() {
+          panel.classList.add('-translate-x-full');
+          button.setAttribute('aria-expanded', 'false');
+          menu.setAttribute('aria-hidden', 'true');
+          setTimeout(() => menu.classList.add('hidden'), 200);
+        }
+        button.addEventListener('click', open);
+        closeEls.forEach(el => el.addEventListener('click', close));
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !menu.classList.contains('hidden')) close(); });
+      })();
+
+      // Reveal on scroll
+      (function() {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('revealed');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+      })();
+
+      // Gallery lightbox
+      (function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImage');
+        function open(src, alt) {
+          lightboxImg.src = src;
+          lightboxImg.alt = alt || 'Expanded gallery image';
+          lightbox.classList.remove('hidden');
+          lightbox.setAttribute('aria-hidden', 'false');
+        }
+        function close() {
+          lightbox.classList.add('hidden');
+          lightbox.setAttribute('aria-hidden', 'true');
+          lightboxImg.src = '';
+        }
+        document.querySelectorAll('[data-lightbox-trigger]').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const img = btn.querySelector('img');
+            if (img) open(img.currentSrc || img.src, img.alt);
+          });
+        });
+        lightbox.addEventListener('click', (e) => {
+          if (e.target.matches('[data-lightbox-close], #lightbox, #lightbox > div:first-child')) close();
+        });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) close(); });
+      })();
+
+      // Form handling (progressive enhancement)
+      (function() {
+        const forms = document.querySelectorAll('form[data-formspree]');
+        forms.forEach((form) => {
+          form.addEventListener('submit', async (e) => {
+            if (!form.checkValidity()) {
+              return;
+            }
+            e.preventDefault();
+            const action = form.getAttribute('action') || '';
+            const status = document.getElementById('formStatus');
+            if (status) { status.textContent = 'Sending…'; status.className = 'mt-2 text-sm text-slate-600'; }
+
+            // TODO: Replace with Formspree endpoint before going live
+            if (!/^https?:\/\//.test(action) || action.includes('TODO_FORMSPREE_ENDPOINT')) {
+              if (status) { status.textContent = 'Form is in demo mode. Add your Formspree endpoint to enable submissions.'; status.className = 'mt-2 text-sm text-amber-700'; }
+              return;
+            }
+
+            try {
+              const formData = new FormData(form);
+              const res = await fetch(action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } });
+              if (res.ok) {
+                if (status) { status.textContent = 'Thanks! Your enquiry has been sent.'; status.className = 'mt-2 text-sm text-emerald-700'; }
+                form.reset();
+              } else {
+                const data = await res.json().catch(() => ({}));
+                const err = data.error || 'Something went wrong. Please try again later.';
+                if (status) { status.textContent = err; status.className = 'mt-2 text-sm text-rose-700'; }
+              }
+            } catch (err) {
+              if (status) { status.textContent = 'Network error. Please try again.'; status.className = 'mt-2 text-sm text-rose-700'; }
+            }
+          });
+        });
+      })();
+
+      // Footer year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
+
