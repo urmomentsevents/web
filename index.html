@@ -80,18 +80,17 @@
 
       <!-- Mobile menu -->
       <div id="mobileMenu" class="md:hidden fixed inset-0 z-50 hidden" role="dialog" aria-modal="true">
-        <div class="absolute inset-0 bg-black/40" data-close-menu></div>
-        <div class="absolute inset-y-0 left-0 w-80 max-w-[80%] bg-white shadow-xl p-6 flex flex-col gap-4 transform transition-transform duration-200 will-change-transform -translate-x-full" id="mobileMenuPanel">
-          <div class="flex items-center justify-between">
-            <span class="text-lg font-semibold">UrCelebrations</span>
-            <button class="inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500" data-close-menu aria-label="Close menu">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-            </button>
-          </div>
-          <nav class="flex flex-col gap-3 mt-2" aria-label="Mobile Primary">
-            <a href="index.html" class="px-2 py-2 rounded hover:bg-slate-100" data-close-menu>Home</a>
-            <a href="services.html" class="px-2 py-2 rounded hover:bg-slate-100" data-close-menu>Services</a>
-            <a href="#contact" class="px-2 py-2 rounded hover:bg-slate-100" data-close-menu>Contact</a>
+        <div class="absolute inset-0 bg-black/60" data-close-menu></div>
+        <div class="absolute inset-0 h-full w-full bg-white p-6 pt-16 transform transition-transform duration-200 will-change-transform -translate-y-full shadow-2xl" id="mobileMenuPanel">
+          <button class="absolute top-4 right-4 inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500" data-close-menu aria-label="Close menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+          <nav class="mt-2" aria-label="Mobile Primary">
+            <div class="overflow-hidden rounded-xl ring-1 ring-slate-200 bg-white divide-y divide-slate-200">
+              <a href="index.html" class="block px-4 py-5 text-slate-900 text-lg font-medium hover:bg-slate-50" data-close-menu>Home</a>
+              <a href="services.html" class="block px-4 py-5 text-slate-900 text-lg font-medium hover:bg-slate-50" data-close-menu>Services</a>
+              <a href="#contact" class="block px-4 py-5 text-slate-900 text-lg font-medium hover:bg-slate-50" data-close-menu>Contact</a>
+            </div>
           </nav>
         </div>
       </div>
@@ -280,12 +279,12 @@
         const closeEls = menu.querySelectorAll('[data-close-menu]');
         function open() {
           menu.classList.remove('hidden');
-          requestAnimationFrame(() => panel.classList.remove('-translate-x-full'));
+          requestAnimationFrame(() => panel.classList.remove('-translate-y-full'));
           button.setAttribute('aria-expanded', 'true');
           menu.setAttribute('aria-hidden', 'false');
         }
         function close() {
-          panel.classList.add('-translate-x-full');
+          panel.classList.add('-translate-y-full');
           button.setAttribute('aria-expanded', 'false');
           menu.setAttribute('aria-hidden', 'true');
           setTimeout(() => menu.classList.add('hidden'), 200);
