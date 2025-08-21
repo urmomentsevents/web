@@ -1,7 +1,7 @@
 {
-  "brandName": "UrCelebrations",
+  "brandName": "UrMoments",
   "tagline": "Your moments, our promise.",
-  "email": "hello@UrCelebrations.co.uk",
+  "email": "hello@urmoments.co.uk",
   "phone": "+447000000000",
   "address": "London, UK",
   "socialLinks": {
@@ -17,24 +17,100 @@
     "assets/home/image5.jpg",
     "assets/home/image6.jpg"
   ],
+  "heroBanner": {
+    "image": "assets/home/image1.jpg",
+    "headline": "Beautiful, stress-free party decorations",
+    "subhead": "Birthdays, baby showers, and more across London",
+    "points": ["Theme styling", "Set-up & clean-up", "On-time guarantee"]
+  },
   "services": [
     {
       "title": "Birthday Decorations",
-      "description": "Balloon garland, backdrop stand, signage.",
+      "description": "Theme-based styling with balloons, backdrop, and signage.",
       "image": "assets/services/image1.jpg",
-      "price": "Contact Us"
+      "price": "Contact Us",
+      "popular": true,
+      "features": [
+        "Balloon garland & backdrop",
+        "Personalised signage",
+        "Set-up & clean-up included"
+      ],
+      "tags": ["Backdrop", "Garland", "Signage"]
     },
     {
       "title": "Gender Reveal Decorations",
-      "description": "Larger backdrop, themed props, table styling.",
+      "description": "Elegant reveal moments with props and table styling.",
       "image": "assets/services/image2.jpg",
-      "price": "Contact Us"
+      "price": "Contact Us",
+      "features": [
+        "Reveal props & backdrop",
+        "Theme table styling",
+        "Setup in 90 minutes"
+      ],
+      "tags": ["Props", "Backdrop", "Table styling"]
     },
     {
       "title": "Surprise Party Decorations",
-      "description": "Feature wall, ceiling décor, custom signage.",
+      "description": "Statement feature wall with ceiling décor and custom signage.",
       "image": "assets/services/image3.jpg",
-      "price": "Contact Us"
+      "price": "Contact Us",
+      "features": [
+        "Feature wall",
+        "Ceiling décor",
+        "Custom signage"
+      ],
+      "tags": ["Feature wall", "Ceiling décor"]
+    }
+  ],
+  "addOns": [
+    { "label": "Photographer", "icon": "📸" },
+    { "label": "Cake", "icon": "🎂" },
+    { "label": "Catering", "icon": "🍽️" },
+    { "label": "Venue sourcing", "icon": "🏛️" },
+    { "label": "Return gifts", "icon": "🎁" }
+  ],
+  "testimonials": [
+    {
+      "name": "Priya S.",
+      "area": "Harrow",
+      "text": "They nailed the pastel theme and handled everything end-to-end. Our guests loved it!",
+      "avatar": ""
+    },
+    {
+      "name": "Rahul & Meera",
+      "area": "Wembley",
+      "text": "On time, super friendly, and the backdrop looked stunning in photos.",
+      "avatar": ""
+    },
+    {
+      "name": "Anita K.",
+      "area": "Ilford",
+      "text": "Great value and zero stress. We just arrived and enjoyed the party!",
+      "avatar": ""
+    },
+    {
+      "name": "Anita M.",
+      "area": "EastHam",
+      "text": "Great value and zero stress. We just arrived and enjoyed the party!",
+      "avatar": ""
+    }
+  ],
+  "faq": [
+    {
+      "q": "How far in advance should I book?",
+      "a": "2-4 weeks is ideal, but we often handle last-minute requests depending on availability."
+    },
+    {
+      "q": "Do you cover set-up and clean-up?",
+      "a": "Yes. Both are included in every package, with typical set-up time between 60-120 minutes."
+    },
+    {
+      "q": "Which areas do you serve?",
+      "a": "Greater London and nearby areas. Share your postcode and we’ll confirm logistics."
+    },
+    {
+      "q": "Can you work with my theme and venue?",
+      "a": "Absolutely. We tailor colours and props to your theme and the venue’s layout."
     }
   ],
   "contactForm": {
@@ -48,14 +124,14 @@
     },
     "budgetOptions": [
       "<£300",
-      "£300–£600",
-      "£600–£1000",
+      "£300-£600",
+      "£600-£1000",
       "£1000+"
     ]
   },
   "seo": {
-    "title": "UrCelebrations — Birthday Decorations in London | Your moments, our promise.",
-    "description": "UrCelebrations creates stylish, stress-free birthday decorations in London. Theme packages, set-up & clean-up, optional add-ons like photography and cake. Get a fast quote.",
+    "title": "UrMoments - Birthday Decorations in London | Your moments, our promise.",
+    "description": "UrMoments creates stylish, stress-free birthday decorations in London. Theme packages, set-up & clean-up, optional add-ons like photography and cake. Get a fast quote.",
     "keywords": "birthday decorations London, balloons, backdrops, event styling",
     "image": "/assets/og-cover.svg",
     "url": ""

@@ -1,12 +1,12 @@
-# UrCelebrations Website — AI Prompt / Design Specification
+# UrMoments Website - AI Prompt / Design Specification
 
-This file contains the **design requirements** for generating the UrCelebrations marketing website.  
+This file contains the **design requirements** for generating the UrMoments marketing website.  
 The AI agent should follow these instructions when creating the HTML, CSS (Tailwind), and JS files.
 
 ---
 
 ## 🏷 Brand
-- **Name:** UrCelebrations  
+- **Name:** UrMoments  
 - **Tagline:** *Your moments, our promise.*  
 - **Tone:** Warm, trustworthy, family-centric.  
 - **Colors (Tailwind):**
@@ -31,7 +31,7 @@ The AI agent should follow these instructions when creating the HTML, CSS (Tailw
 ---
 
 ## 🖥 Global UI
-- Sticky header with logo wordmark **UrCelebrations** and nav links: Home, Services, Contact  
+- Sticky header with logo wordmark **UrMoments** and nav links: Home, Services, Contact  
 - Mobile navigation: hamburger → slide-over menu  
 - Footer:
   - Mini nav  
@@ -66,7 +66,7 @@ Fields:
 - Full Name (text, required)  
 - Email (email, required)  
 - Postcode (text, required)  
-- Budget (select: `<£300`, `£300–£600`, `£600–£1000`, `£1000+`)  
+- Budget (select: `<£300`, `£300-£600`, `£600-£1000`, `£1000+`)  
 - Type of Event / Description (textarea, required; placeholder: “e.g., 1st birthday in Harrow, soft pastel theme…”)  
 - GDPR consent checkbox (required): “I agree to be contacted about my enquiry.”  
 
@@ -82,9 +82,9 @@ Submit:
 - Intro: short paragraph (“Pick a starting package; we tailor to your theme and venue.”)  
 
 ### Packages (cards)
-- **Basic** — Balloon garland, backdrop stand, signage. *From £249*  
-- **Premium** — Larger backdrop, themed props, table styling. *From £449*  
-- **Deluxe** — Feature wall, ceiling décor, custom signage. *From £799*  
+- **Basic** - Balloon garland, backdrop stand, signage. *From £249*  
+- **Premium** - Larger backdrop, themed props, table styling. *From £449*  
+- **Deluxe** - Feature wall, ceiling décor, custom signage. *From £799*  
 - Each card: bullet list + “Enquire” button → scroll to Contact form  
 
 ### Add-ons Section
@@ -104,7 +104,7 @@ Submit:
 ---
 
 ## 📱 Mobile-First Design
-- Design for **360–414px** width first  
+- Design for **360-414px** width first  
 - Touch-friendly tap targets (min 44px height)  
 - Sticky “Get a Quote” button visible on mobile  
 - Images with `aspect-[ratio]` utilities and `loading="lazy"`  
@@ -121,15 +121,15 @@ Submit:
 
 ## 🔍 SEO & Meta
 - `<title>`:
-  - Home: “UrCelebrations — Birthday Decorations in London | Your moments, our promise.”  
-  - Services: “UrCelebrations Services — Packages & Add-ons”  
+  - Home: “UrMoments - Birthday Decorations in London | Your moments, our promise.”  
+  - Services: “UrMoments Services - Packages & Add-ons”  
 - Meta description (Home):  
-  “UrCelebrations creates stylish, stress-free birthday decorations in London. Theme packages, set-up & clean-up, optional add-ons like photography and cake. Get a fast quote.”  
+  “UrMoments creates stylish, stress-free birthday decorations in London. Theme packages, set-up & clean-up, optional add-ons like photography and cake. Get a fast quote.”  
 - Open Graph & Twitter meta using `/assets/og-cover.jpg`  
 - JSON-LD schema: `LocalBusiness` with:
-  - name: UrCelebrations  
+  - name: UrMoments  
   - area served: London  
-  - email: hello@UrCelebrations.co.uk  
+  - email: hello@UrMoments.co.uk  
   - telephone: placeholder  
 
 ---
