@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>UrCelebrations — Birthday Decorations in London | Your moments, our promise.</title>
-    <meta name="description" content="UrCelebrations creates stylish, stress-free birthday decorations in London. Theme packages, set-up &amp; clean-up, optional add-ons like photography and cake. Get a fast quote." />
+    <title>UrMoments - Birthday Decorations in London | Your moments, our promise.</title>
+    <meta name="description" content="UrMoments creates stylish, stress-free birthday decorations in London. Theme packages, set-up &amp; clean-up, optional add-ons like photography and cake. Get a fast quote." />
 
     <!-- TODO: Set the real site URL -->
     <meta property="og:url" content="https://TODO_SITE_URL/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="UrCelebrations — Birthday Decorations in London" />
+    <meta property="og:title" content="UrMoments - Birthday Decorations in London" />
     <meta property="og:description" content="Stylish, stress-free birthday decorations in London. Theme packages, set-up &amp; clean-up, and add-ons like photography and cake." />
     <!-- TODO: Replace with real social preview image -->
     <meta property="og:image" content="/assets/og-cover.svg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="UrCelebrations — Birthday Decorations in London" />
+    <meta name="twitter:title" content="UrMoments - Birthday Decorations in London" />
     <meta name="twitter:description" content="Stylish, stress-free birthday decorations in London. Theme packages, set-up &amp; clean-up, and add-ons like photography and cake." />
     <meta name="twitter:image" content="/assets/og-cover.svg" />
 
@@ -23,9 +23,9 @@
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "UrCelebrations",
+        "name": "UrMoments",
         "image": "/assets/og-cover.svg",
-        "email": "hello@UrCelebrations.co.uk",
+        "email": "hello@urmoments.co.uk",
         "telephone": "TODO_PHONE_NUMBER",
         "areaServed": "London",
         "url": "https://TODO_SITE_URL/",
@@ -56,20 +56,23 @@
       /* Simple reveal-on-scroll */
       .reveal { opacity: 0; transform: translateY(8px); transition: opacity .5s ease, transform .5s ease; }
       .revealed { opacity: 1; transform: translateY(0); }
+      /* Hide scrollbar for testimonial carousel */
+      .no-scrollbar { scrollbar-width: none; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
     </style>
   </head>
-  <body class="min-h-screen bg-slate-50 text-slate-900">
+  <body class="min-h-screen bg-slate-50 text-slate-900 leading-7 md:leading-8">
     <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] bg-white text-slate-900 px-3 py-2 rounded shadow">Skip to content</a>
 
     <!-- Header / Nav -->
     <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
-          <a href="index.html" class="text-lg font-semibold tracking-tight text-slate-900"><span data-brand-name>UrCelebrations</span></a>
-          <nav class="hidden md:flex items-center gap-6" aria-label="Primary">
-            <a href="index.html" class="text-slate-700 hover:text-rose-600">Home</a>
-            <a href="services.html" class="text-slate-700 hover:text-rose-600">Services</a>
-            <a href="#contact" class="text-slate-700 hover:text-rose-600">Contact</a>
+          <a href="index.html" class="text-lg font-semibold tracking-tight text-slate-900"><span data-brand-name>UrMoments</span></a>
+          <nav class="hidden md:flex items-center gap-2" aria-label="Primary">
+            <a href="index.html" class="px-3 py-2 rounded-md text-slate-700 hover:text-rose-600 hover:bg-rose-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500">Home</a>
+            <a href="services.html" class="px-3 py-2 rounded-md text-slate-700 hover:text-rose-600 hover:bg-rose-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500">Services</a>
+            <a href="#contact" class="px-3 py-2 rounded-md text-slate-700 hover:text-rose-600 hover:bg-rose-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500">Contact</a>
           </nav>
           <button id="menuButton" class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500" aria-controls="mobileMenu" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
@@ -98,43 +101,49 @@
 
     <main id="main" class="">
       <!-- Hero -->
-      <section class="relative overflow-hidden bg-white">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <div class="max-w-2xl reveal">
-            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">Birthday decorations made easy.</h1>
-            <p class="mt-3 text-slate-700" data-tagline>From balloons to backdrops, we style your celebration end-to-end across London.</p>
-            <div class="mt-6 flex flex-col sm:flex-row gap-3">
-              <a href="#contact" class="inline-flex items-center justify-center rounded-md bg-rose-600 px-5 py-3 text-white font-medium shadow hover:bg-rose-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500">
-                Get a Quote
-              </a>
-              <a href="services.html" class="inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-5 py-3 text-slate-900 font-medium shadow-sm hover:border-slate-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500">
-                View Services
-              </a>
+      <section class="relative overflow-hidden bg-slate-900">
+        <div class="absolute inset-0">
+          <img id="hero-banner-img" src="assets/home/image1.jpg" alt="Hero banner" class="h-full w-full object-cover opacity-60" />
+        </div>
+        <div class="relative min-h-[36vh] sm:min-h-[40vh] md:min-h-[56vh] flex items-center">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-24">
+            <div class="max-w-2xl">
+              <h1 id="hero-headline" class="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">Birthday decorations made easy.</h1>
+              <p id="hero-subhead" class="mt-2 text-rose-100">Birthdays, baby showers, and more across London</p>
+              <ul id="hero-points" class="mt-4 flex flex-wrap gap-3 text-rose-50 text-sm"></ul>
+              <div class="mt-6">
+                <a href="#contact" class="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-rose-600 to-rose-500 px-6 py-3 text-white font-medium shadow hover:from-rose-500 hover:to-rose-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-300">
+                  Get a Quote
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      
+
       <!-- Highlights -->
       <section class="bg-slate-50">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-          <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <li class="reveal rounded-lg bg-white p-5 shadow ring-1 ring-slate-200">
+          <h2 class="text-2xl md:text-3xl font-semibold">Why choose us</h2>
+          <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <li class="reveal rounded-xl bg-white p-5 shadow ring-1 ring-slate-200">
               <div class="text-2xl">🎉</div>
               <h3 class="mt-2 font-semibold">Theme-ready packages</h3>
               <p class="text-sm text-slate-600">Pick a theme, we handle the rest.</p>
             </li>
-            <li class="reveal rounded-lg bg-white p-5 shadow ring-1 ring-slate-200">
+            <li class="reveal rounded-xl bg-white p-5 shadow ring-1 ring-slate-200">
               <div class="text-2xl">🧹</div>
               <h3 class="mt-2 font-semibold">Set-up &amp; clean-up included</h3>
               <p class="text-sm text-slate-600">We arrive on time and leave it spotless.</p>
             </li>
-            <li class="reveal rounded-lg bg-white p-5 shadow ring-1 ring-slate-200">
+            <li class="reveal rounded-xl bg-white p-5 shadow ring-1 ring-slate-200">
               <div class="text-2xl">⏰</div>
               <h3 class="mt-2 font-semibold">On time, every time</h3>
               <p class="text-sm text-slate-600">Reliable and friendly professionals.</p>
             </li>
-            <li class="reveal rounded-lg bg-white p-5 shadow ring-1 ring-slate-200">
+            <li class="reveal rounded-xl bg-white p-5 shadow ring-1 ring-slate-200">
               <div class="text-2xl">📸</div>
               <h3 class="mt-2 font-semibold">Add-ons: photography, cake &amp; more</h3>
               <p class="text-sm text-slate-600">One stop for everything you need.</p>
@@ -146,7 +155,7 @@
       <!-- Featured Gallery -->
       <section class="bg-white" aria-labelledby="gallery-heading">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-          <h2 id="gallery-heading" class="reveal text-xl font-semibold text-slate-900">Featured Gallery</h2>
+          <h2 id="gallery-heading" class="reveal text-2xl md:text-3xl font-semibold text-slate-900">Featured Gallery</h2>
           <ul id="gallery-list" class="mt-6 grid grid-cols-2 md:grid-cols-3 gap-4" role="list"></ul>
         </div>
       </section>
@@ -171,10 +180,38 @@
         </div>
       </section>
 
+      <!-- Testimonials (carousel) -->
+      <section class="bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+          <h2 class="text-2xl md:text-3xl font-semibold">What families say</h2>
+          <div id="testimonials-carousel" class="mt-6 relative">
+            <div id="testimonials-track" class="flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth" aria-label="Testimonials"></div>
+            <div id="testimonials-dots" class="mt-4 flex justify-center gap-2 md:hidden"></div>
+            <!-- Desktop arrows below, centered -->
+            <div id="testimonials-controls" class="mt-4 hidden md:flex items-center justify-center gap-3">
+              <button id="testimonials-prev" type="button" aria-label="Previous testimonials" class="inline-flex items-center justify-center h-10 w-10 rounded-full bg-white/90 ring-1 ring-slate-200 shadow hover:bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5 text-slate-700"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+              </button>
+              <button id="testimonials-next" type="button" aria-label="Next testimonials" class="inline-flex items-center justify-center h-10 w-10 rounded-full bg-white/90 ring-1 ring-slate-200 shadow hover:bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5 text-slate-700"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="bg-slate-50">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+          <h2 class="text-2xl md:text-3xl font-semibold">FAQs</h2>
+          <div id="faq" class="mt-6 divide-y divide-slate-200 rounded-xl bg-white ring-1 ring-slate-200"></div>
+        </div>
+      </section>
+
       <!-- Contact Form -->
       <section id="contact" class="bg-white scroll-mt-24">
         <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-12">
-          <h2 class="text-xl font-semibold">Get a fast quote</h2>
+          <h2 class="text-2xl md:text-3xl font-semibold">Get a fast quote</h2>
           <p class="mt-1 text-slate-600">Tell us a few details and we’ll get back within 24 hours.</p>
 
           <form data-formspree method="POST" action="TODO_FORMSPREE_ENDPOINT" class="mt-6 grid grid-cols-1 gap-4">
@@ -193,12 +230,7 @@
             </div>
             <div>
               <label for="budget" class="block text-sm font-medium text-slate-700">Budget</label>
-              <select id="budget" name="budget" class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 shadow-sm focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500">
-                <option value="&lt;£300">&lt;£300</option>
-                <option value="£300–£600">£300–£600</option>
-                <option value="£600–£1000">£600–£1000</option>
-                <option value="£1000+">£1000+</option>
-              </select>
+              <input id="budget" name="budget" type="number" inputmode="numeric" pattern="[0-9]*" min="0" step="50" placeholder="Approx budget (£)" class="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 shadow-sm focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500" />
             </div>
             <div>
               <label for="description" class="block text-sm font-medium text-slate-700">Type of Event / Description</label>
@@ -217,7 +249,7 @@
             <input type="hidden" name="page" value="home" />
 
             <div class="flex items-center gap-3">
-              <button type="submit" class="inline-flex items-center justify-center rounded-md bg-rose-600 px-5 py-3 text-white font-medium shadow hover:bg-rose-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500">
+              <button type="submit" class="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-rose-600 to-rose-500 px-5 py-3 text-white font-medium shadow hover:from-rose-500 hover:to-rose-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500">
                 Submit
               </button>
               <!-- TODO: Replace with your phone number if you want a tel link -->
@@ -234,7 +266,7 @@
 
     <!-- Mobile sticky CTA -->
     <div class="fixed bottom-4 left-0 right-0 z-40 sm:hidden px-4">
-      <a href="#contact" class="block rounded-md bg-rose-600 px-5 py-3 text-center text-white font-medium shadow-lg hover:bg-rose-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500">Get a Quote</a>
+      <a href="#contact" class="block rounded-xl bg-gradient-to-r from-rose-600 to-rose-500 px-5 py-3 text-center text-white font-medium shadow-lg hover:from-rose-500 hover:to-rose-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500">Get a Quote</a>
     </div>
 
     <!-- Footer -->
@@ -242,7 +274,7 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-start">
           <div>
-            <div class="text-lg font-semibold">UrCelebrations</div>
+            <div class="text-lg font-semibold">UrMoments</div>
             <p class="mt-2 text-sm text-slate-600">Your moments, our promise.</p>
           </div>
           <nav aria-label="Footer" class="flex flex-col gap-2">
@@ -257,13 +289,13 @@
             </a>
             <div class="mt-4 flex flex-col gap-1 text-sm">
               <!-- These will be updated from config.json -->
-              <a id="email-link" data-mail href="mailto:hello@UrCelebrations.co.uk" class="text-slate-700 hover:text-rose-600">Email us</a>
+              <a id="email-link" data-mail href="mailto:hello@urmoments.co.uk" class="text-slate-700 hover:text-rose-600">Email us</a>
               <a id="phone-link" data-tel href="tel:TODO_PHONE_NUMBER" class="text-slate-700 hover:text-rose-600">Call us</a>
               <span id="address-text" class="text-slate-500"></span>
             </div>
           </div>
         </div>
-        <p class="mt-8 text-xs text-slate-500">&copy; <span id="year"></span> UrCelebrations. All rights reserved.</p>
+        <p class="mt-8 text-xs text-slate-500">&copy; <span id="year"></span> UrMoments. All rights reserved.</p>
       </div>
     </footer>
 
@@ -329,7 +361,11 @@
           if (img) open(img.currentSrc || img.src, img.alt);
         });
         lightbox.addEventListener('click', (e) => {
-          if (e.target.matches('[data-lightbox-close], #lightbox, #lightbox > div:first-child')) close();
+          const clickedClose = e.target.closest('[data-lightbox-close]');
+          const insideFigure = e.target.closest('figure');
+          if (clickedClose || !insideFigure) {
+            close();
+          }
         });
         document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) close(); });
       })();
